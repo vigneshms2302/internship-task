@@ -1,28 +1,22 @@
-<div style="display: flex; height: 90vh; align-items: center; justify-content: center">
-    <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
-      <mat-card fxFlex="40" class="mat-card-curved-corners">
-        <mat-toolbar color="primary" class="mat-toolbar-curved-corners" >SIGN-UP PAGE</mat-toolbar>
-        <form fxLayout="column" fxLayoutAlign="stretch">
-                   <mat-form-field appearance="fill">
-            <mat-label>Create an User-name</mat-label>
-            <input matInput matInput placeholder="User-name"></mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Create a Password</mat-label>
-            <input matInput type="password"  matInput placeholder="Password"></mat-form-field>
-            <mat-form-field appearance="fill">
-                <mat-label>Confirm Password</mat-label>
-                <input matInput type="password"  matInput placeholder="Confirm Password">
-              </mat-form-field>
-            
-          <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-            <button  [routerLink]="['/login']"  mat-raised-button type="submit" color="primary" matTooltip="Confirm Sign-Up" aria-label="Button that displays a tooltip when focused or hovered over" style="width: 100%">
-              Sign-Up
-            </button>
-          </mat-card-actions>
-          <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-            <a [routerLink]="['/login']" class="link"> Have an account? Login</a>
-          </mat-card-actions>
-        </form>
-      </mat-card>
+<div class="login-container">
+  <h1>Sign-Up</h1>
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" class="form-control">
     </div>
-  </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Confirm Password:</label>
+      <input type="password" id="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <br><br>
+    <p>Already have an account? <a routerLink="/login">Login</a></p>
+  </form>
+</div>
+
+

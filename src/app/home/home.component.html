@@ -1,28 +1,50 @@
-<p>home works!</p>
-<div style="display: flex; height: 90vh; align-items: center; justify-content: center">
-    <div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
-      <mat-card fxFlex="40" class="mat-card-curved-corners">
-        <mat-toolbar color="primary" class="mat-toolbar-curved-corners" >Welcome</mat-toolbar>
-        <form fxLayout="column" fxLayoutAlign="stretch">
-          <mat-form-field appearance="fill">
-            <mat-label>Enter User-name</mat-label>
-            <input matInput placeholder="User-name">
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-            <mat-label>Enter the Password</mat-label>
-            <input matInput type="password" placeholder="Password">
-          </mat-form-field>
-          <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-            <button mat-raised-button type="submit" color="primary" style="width: 100%">
-              Login
-            </button>
-          </mat-card-actions>
-          <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-            <a [routerLink]="['/signup']" class="link">Don't have an account? Sign up</a>
-          </mat-card-actions>
-        </form>
-      </mat-card>
-    </div>
-  </div>
-  <app-contact-us-button></app-contact-us-button>
-  
+
+<router-outlet></router-outlet>
+
+<h2>Welcome to My Portfolio</h2>
+<p>I'm a software developer, fitness enthusiast, and photography hobbyist. This is my platform to showcase my skills and works. Take a look around to learn more about me!</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quasi id consequatur nam voluptatum ducimus velit consectetur ipsa deleniti, cumque iusto quis, tenetur laborum animi, perferendis repudiandae vitae placeat voluptas.</p>
+
+
+
+
+<!-- <p>home works!</p>
+<div class="container">
+    <header class="header">
+      <img src="assets/logo.png" class="header-logo">
+      <nav class="header-nav">
+        <a routerLink="/services" class="header-nav-link">Services</a>
+        <a routerLink="/portfolio" class="header-nav-link">Portfolio</a>
+        <a routerLink="/about" class="header-nav-link">About</a>
+        <a routerLink="/contact" class="header-nav-link">Contact</a>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="main-title">Capturing Memories, One Frame at a Time</h1>
+      <p class="main-text">
+        Hi, I'm a professional photographer specializing in capturing life's
+        most precious moments. From weddings to family portraits, I strive to
+        create timeless images that will be cherished for generations.
+      </p>
+      <button class="main-button">View Portfolio</button>
+    </main>
+    <aside class="aside">
+      <h2 class="aside-title">Follow Me</h2>
+      <div class="aside-icons">
+        <a href="#" class="aside-icon">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#" class="aside-icon">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+        <a href="#" class="aside-icon">
+          <i class="fa fa-twitter-square"></i>
+        </a>
+      </div>
+    </aside>
+    <footer class="footer">
+      <p class="footer-text">
+        Copyright © {{currentYear}} Photographer Name. All rights reserved.
+      </p>
+    </footer>
+  </div> -->
